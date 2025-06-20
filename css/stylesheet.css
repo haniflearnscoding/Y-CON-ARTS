@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.wrapper img {
+    max-width: 65%;
+
+}
+
+.wrapper-img {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Optional: allows images to wrap onto a new line if there's not enough space */
+    gap: 10px;
+    /* Optional: adds space between images */
+}
+
+.wrapper-img img {
+    max-width: 65%;
+}
+
+.content {
+    width: 85vw;
+    margin: 0 auto;
+}
+
+#description {
+    font-size: 3em;
+    color: blue;
+    line-height: 2em;
+    font-weight: 600;
+    line-height: 1.25;
+
+}
+
+/* 
+#info {
+    margin-bottom: 7em;
+} */
+
+#text {
+    margin-bottom: 10em;
+    display: grid;
+
+}
+
+/* #text p {
+    font-size: 1.5em;
+    line-height: 2em;
+} */
+
+a {
+    font-size: 1.5em;
+    line-height: 2em;
+    font-weight: 600;
+    line-height: 1.25;
+    border-bottom: 1px solid #eaecef
+}
+
+#proposal:hover {
+    color: yellow
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+
+}
+
+
+#next {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* padding: 10em; */
+    font-size: 5em;
+    width: 100vw;
+
+}
+
+#next a:hover {
+    background-color: black;
+}
+
+
+
+#second {
+    text-align: right;
+}
+
+video {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+#nav {
+    color: rgb(105, 105, 105);
+    border-bottom: solid;
+
+}
+
+#leaf {
+    width: 10%;
+}
+
+/* #laptop {
+    display: none;
+} */
+
+p,
+ul {
+    line-height: 1.5em;
+
+}
+
+.toggle-header~p,
+.toggle-header~ul {
+    display: none;
+}
+
+h1,
+h2,
+h3 {
+    cursor: pointer;
+}
+
+
+
+.toggle-header {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Gallery container setup */
+.gallery-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Gallery images setup */
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.gallery img {
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Styling for buttons */
+.backBtn,
+.nextBtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#backBtn {
+    position: absolute;
+    left: 0;
+}
+
+#nextBtn {
+    position: absolute;
+    right: 0;
+}
+
+.laptop-container {
+    display: block;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .content {
+        width: 65vw;
+
+    }
+
+    #laptop {
+        display: block;
+    }
+
+    #phone {
+        display: none;
+    }
+
+
+    #info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10em;
+    }
+
+
+    #next {
+        font-size: 10em;
+    }
+
+    #leaf {
+        width: 3%;
+    }
+
+    .laptop-container {
+        display: flex;
+        gap: 4em;
+    }
+
+
+
+
+}
